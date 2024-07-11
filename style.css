@@ -1,0 +1,352 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #fff7f2;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Style the navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+/* Style the logo */
+.navbar-logo .logo {
+    height: 120px;
+}
+
+/* Style the section name links */
+.section-name {
+    display: flex;
+    gap: 35px;
+}
+
+.section-name a {
+    color: #000000;
+}
+
+.section-name i {
+    font-size: 24px;
+    padding: 10px 15px;
+}
+
+.section-name a:hover {
+    color: #009688;
+}
+
+.section-name h2 {
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 19px;
+}
+
+/* Responsive Design: stack the navbar items vertically on smaller screens */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .section-name {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .section-name h2 {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+/*style for main//////////////////////////////////////*/
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sections styling */
+section {
+    padding: 20px 0; /* Adjust as needed */
+    text-align: center;
+    background-color: #FFF7F2; /* Just for visibility */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* Styling for .end-section */
+.end-section {
+    height: 0.5px; /* Adjust as needed for spacing */
+}
+
+/* Example styling for .container and .emote */
+.container {
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+
+.name {
+    display: inline-block;
+    font-size: 3em; /* Adjust font size as needed */
+    position: relative;
+}
+
+
+.wave-hand {
+    animation: wave 2s infinite; /* Hand waving animation */
+    display: inline-block;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    75% {
+        transform: rotate(-20deg);
+    }
+}
+
+.icon {
+    margin-top: 20px;
+}
+.icon a{
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.icon a:hover{
+    color: #BB7E8C;
+}
+
+.emote {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    section {
+        padding: 30px 0; /* Adjust padding for smaller screens */
+    }
+}
+
+
+
+
+#education {
+    padding: 50px 0;
+}
+
+.ed-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.big-4 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.underline {
+    width: 1000px;
+    height: 2px;
+    background-color: #BB7E8C; /* Yellow color for underline */
+    margin: 10px auto 0 auto;
+    position: relative;
+    top: -10px;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Education box styling */
+.ed-box {
+    background-color: #009688; /* Dark background for the boxes */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+}
+
+.ed-box-in {
+    text-align: left;
+}
+
+.date {
+    font-size: 1.2em;
+    color: #1B2021; /* Yellow color for date text */
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.university {
+    font-size: 1em;
+    color: #fff; /* Lighter color for university name */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .ed-box {
+        max-width: 100%;
+    }
+}
+
+
+
+/* General styling for the skills section */
+#skills {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.sk-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skill-container-box {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.skill-row2 {
+    font-size: 1.5rem;
+    color: #FF4500; /* Custom color for "My Technical Expertise" */
+}
+
+.skill-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: center;
+    gap: 100px;
+}
+
+.skill-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #e0e0e0; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-name img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-name p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Zoom effect on hover */
+.skill-name:hover {
+    transform: scale(1.1);
+}
+
+
+/* Style the footer //////////////////////////////////*/
+footer {
+    background-color: #009688;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Style the footer container */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Style the text */
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Style for the scroll-up icon */
+.footer a {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    position: absolute;
+    right: 20px;
+}
+
+/* Hover effect for the scroll-up icon */
+.footer a:hover {
+    color: #ddd;
+}
+
+/* Make footer responsive */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer p {
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+    .footer i {
+        position: static;
+    }
+}
