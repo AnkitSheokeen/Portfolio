@@ -4,93 +4,88 @@
     text-decoration: none;
     color: inherit;
     font-family: Arial, sans-serif;
+    background-color: #FFF7F2;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-header {
-    background-color: #fff7f2;
-    color: #fff;
-    padding: 10px 0;
-}
+
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
+    height: 20vh;
 }
 
-.navbar-logo .logo {
-    height: 120px;
+.navbar-logo{
+    display: flex;
 }
 
-.section-name {
+.names{
     display: flex;
     gap: 35px;
+    margin-left: 10%;
 }
 
-.section-name a {
+.logo{
+    height: 100px;
+}
+
+.names a {
     color: #000000;
+    text-decoration: none;
+    
 }
 
-.section-name i {
-    font-size: 24px;
-    padding: 10px 15px;
+.names i {
+    font-size: 23px;
 }
 
-.section-name a:hover {
+.names a:hover {
     color: #009688;
 }
 
-.section-name h2 {
-    margin: 0;
-    padding: 10px 15px;
-    font-size: 19px;
-}
+.names h2 {
+    margin: 0px;
+    font-weight: bold;
+} 
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
     
-    .section-name {
+    .names {
         flex-direction: column;
         width: 100%;
     }
     
-    .section-name h2 {
+    .names h2 {
         width: 100%;
         text-align: left;
     }
-}
+} */
 
-main {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
 
-section {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #FFF7F2;
+
+/* home page */
+.home-page{
     display: flex;
+    justify-content: center;
     align-items: center;
+    height:80vh;    
 }
 
-.end-section {
-    height: 0.5px;
+.home{
+    text-align: center;    
 }
 
-.container {
-    padding: 20px;
-    margin-left: 20%;
-    margin-right: 10%;
+.emote {
+    margin-left: 200px;
+    text-align: center;
 }
 
 .name {
@@ -102,7 +97,19 @@ section {
 .wave-hand {
     animation: wave 2s infinite;
     display: inline-block;
+    background-color: transparent;
 }
+
+.icon a {
+    margin-left: 20px;
+    font-size: 24px;
+    color: #009688;
+}
+
+.icon a:hover {
+    color: #BB7E8C;
+}
+
 
 @keyframes wave {
     0%, 100% {
@@ -116,73 +123,50 @@ section {
     }
 }
 
-.icon {
-    margin-top: 20px;
-}
-
-.icon a {
-    margin-left: 20px;
-    font-size: 24px;
-}
-
-.icon a:hover {
-    color: #BB7E8C;
-}
-
-.emote {
-    padding: 20px;
-    margin-left: 20px;
-}
 
 @media (max-width: 768px) {
-    section {
-        padding: 30px 0;
+    .emote {
+        display: none;
     }
 }
+
+
+
 
 /* education */
 
 #education {
-    height: 100vh
-}
-
-.ed-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-bottom: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
 }
 
-.big-4 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    position: relative;
-    display: inline-block;
+.ed-container {
+    text-align: center;
+}
+
+.row h1{
+    font-weight: bold;
 }
 
 .underline {
-    width: 1000px;
+    width: 800px;
     height: 2px;
     background-color: #BB7E8C;
-    margin: 10px auto 0 auto;
-    position: relative;
-    top: -10px;
+    margin: 20px 0;
+}
+.ed-box, .ed-box-in, .ed-box-in h2,span{
+    background-color: #009688;
 }
 
-.row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
 
 .ed-box {
-    background-color: #009688;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
-    flex: 1;
     min-width: 300px;
     max-width: 45%;
     box-shadow: 3px 3px 8px #BB7E8C;
@@ -193,7 +177,7 @@ section {
 }
 
 .date {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #1B2021;
     font-weight: bold;
 }
@@ -201,45 +185,44 @@ section {
 h2 {
     font-size: 1.5em;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .university {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #fff;
 }
 
 @media (max-width: 768px) {
+    #education {
+        flex-direction: column;
+    }
     .ed-box {
-        max-width: 100%;
+        max-width: 90%;
+    }
+    .loffy-animation {
+        display: none;
     }
 }
+
+
 
 /* skill */
 
 #skills {
-    height: 100vh
+    height: 100vh;  
+    justify-content: center;
+    text-align: center;
 }
 
-.sk-container {
-    width: 80%;
-    margin: 0 auto;
+.skill-heading h1{
+    font-weight: bold;
 }
 
 .skill-container-box {
-    /* border: 2px solid #000000;
-    border-radius: 10px; */
-    padding: 20px;
-}
-
-
-.skill-box {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    justify-content: center;
-    gap: 100px;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 80px;
 }
 
 .skill-name {
@@ -249,119 +232,76 @@ h2 {
     padding: 20px;
     border: 2px solid #e0e0e0;
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     transition: transform 0.3s ease, border-color 0.3s ease;
     cursor: pointer;
     box-shadow: 3px 3px 8px #BB7E8C;
+    justify-content: center
 }
 
 .skill-name img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover;
 }
 
 .skill-name p {
     font-size: 1.2rem;
     color: #333;
+    font-weight: bold;
 }
 
 .skill-name:hover {
     transform: scale(1.1);
 }
 
+
+
 /* Experence */
-
-#experinece{
-    height: 100vh
-}
-.ex-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: center;
-    height: 500px
-}
-
-.big-4 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    position: relative;
-    display: inline-block;
-}
-
-
-.underline {
-    width: 800pxpx;
-    height: 2px;
-    background-color: #BB7E8C;
-    margin: 10px auto 0 auto;
-    position: relative;
-    top: -10px;
-}
-
-.row {
+#experience{
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+    text-align: center;
 }
-
 .ex-box {
     background-color: #009688;
     padding: 20px;
-    margin: 10px;
+    margin-left: 20%;
     border-radius: 8px;
-    flex: 1;
     min-width: 300px;
-    max-width: 45%;
+    max-width: 60%;
     box-shadow: 3px 3px 8px #BB7E8C;
 }
 
-.ex-box-in {
-    text-align: left;
-}
-
-.animation-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-
-@media (max-width: 768px) {
-    .ed-box {
-        max-width: 100%;
-    }
-}
 
 /* Projects */
 #projects{
-    height: 100vh
-}
-.project-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    justify-content: center;
+    text-align: center;
 }
 
-.project-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
+
+.project-card-holder {
+    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+    /* margin-left: 5%; */
 }
+
 
 .project-card {
     position: relative;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 10px;
     overflow: hidden;
-    width: 300px;
+    width: 100%;
     height: 200px;
     transition: transform 0.3s;
     margin: 5px;
@@ -382,7 +322,6 @@ h2 {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,19 +343,23 @@ h2 {
     right: 10px;
     display: flex;
     gap: 10px;
+
 }
 
+
 .icon-link {
-    color: #fff;
+    color:#009688;
+    background-color: transparent;
     font-size: 1.5em;
     text-decoration: none;
+    
 }
 
 .bottom-text {
     position: absolute;
     bottom: 0px;
     left: 10px; 
-    color: #fff;
+    color: #000000; 
     line-height: 0.5;
     white-space: pre-wrap;
     opacity: 0;
@@ -435,18 +378,71 @@ h2 {
 .bottom-text .line2 {
     font-size: 0.9em;
 }
+@media (max-width: 768px) {
+    .project-card-holder {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .project-card {
+        height: 180px;
+    }
+
+    .icon-link {
+        font-size: 1.2em;
+    }
+
+    .bottom-text .line1 {
+        font-size: 1em;
+    }
+
+    .bottom-text .line2 {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card-holder {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+
+    .project-card {
+        height: 150px;
+    }
+
+    .icon-link {
+        font-size: 1em;
+    }
+
+    .bottom-text .line1 {
+        font-size: 0.9em;
+    }
+
+    .bottom-text .line2 {
+        font-size: 0.7em;
+    }
+}
 
 /* Contact me */
 #contact{
-    height: 100vh
-}
-.contact-container {
+    height: 100vh;
     text-align: center;
+}
+
+.contact-container {
+    justify-content: center;
+    align-items: center;
     max-width: 1000px;
     width: 100%;
+    height: 100%;
     margin: 0 auto; /* Center the section horizontally */
     padding: 20px;
     border-radius: 10px;
+}
+
+.text{
+    margin-top: 10%;
 }
 
 .contact-container h1 {
@@ -496,7 +492,10 @@ h2 {
     outline: none;
 }
 
-
+.form-control{
+    background-color:transparent;
+    border: none;
+}
 textarea {
     resize: vertical;
     height: 100px;
@@ -520,7 +519,7 @@ button:hover {
 }
 
 
-
+/* footer */
 footer {
     background-color: #009688;
     color: #000000;
@@ -535,7 +534,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
@@ -547,19 +546,9 @@ footer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    background-color: #009688;
 }
 
-.footer a {
-    font-size: 24px;
-    cursor: pointer;
-    transition: color 0.3s;
-    position: absolute;
-    right: 20px;
-}
-
-.footer a:hover {
-    color: #ddd;
-}
 
 @media (max-width: 600px) {
     .footer {
@@ -570,8 +559,5 @@ footer {
         position: static;
         transform: none;
         text-align: center;
-    }
-    .footer i {
-        position: static;
     }
 }
