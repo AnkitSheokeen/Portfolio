@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
@@ -23,59 +24,54 @@
             </div>
             <div class="section-name">
                 <a href="#">
-                    <h2>Home</h4>
+                    <h2>Home</h2>
                 </a>
-                <a href="#">
-                    <h2>Education</h4>
+                <a href="#education">
+                    <h2>Education</h2>
                 </a>
-                <a href="#">
-                    <h2>Skills</h4>
+                <a href="#skills">
+                    <h2>Skills</h2>
                 </a>
-                <a href="#">
-                    <h2>Project</h4>
+                <a href="#experience">
+                    <h2>Experience</h2>
                 </a>
-                <a href="#">
-                    <h2>Experience</h4>
+                <a href="#projects">
+                    <h2>Projects</h2>
                 </a>
-                <a href="#">
-                    <h2>Contact</h4>
+                <a href="#contact">
+                    <h2>Contact</h2>
                 </a>
-                
-                <a href="#">
+                <a href="#" id="copy-email">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
-                
             </div>
         </div>
     </header>
     
     <main>
         <section id="Home">
-                <div class="container">
-                    <h3>Hi there <span class="wave-hand">👋🏻</span>, I'm Ankit</h3>
-                    <h1 class="name animate__animated animate__bounce">
-                        A Frontend Developer
-                    </h1>
-                    <p>.</p>
-                    <p>I thrive on learning and bringing new ideas to light in web development.</p>
-                    <div class="icon">
-                        <a href="#">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ankit-88a472205/">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
+            <div class="container">
+                <h3>Hi there <span class="wave-hand">👋🏻</span>, I'm Ankit</h3>
+                <h1 class="name animate__animated animate__bounce">
+                    A Frontend Developer
+                </h1>
+                <p>I thrive on learning and bringing new ideas to light in web development.</p>
+                <div class="icon">
+                    <a href="https://github.com/AnkitSheokeen">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ankit-88a472205/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
-                <div class="emote">
-                    <dotlottie-player src="https://lottie.host/e3442b41-eb3e-405f-9e55-04e71db31cd0/l2LiPRsDx5.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
-                </div>
-            
+            </div>
+            <div class="emote">
+                <dotlottie-player src="https://lottie.host/e3442b41-eb3e-405f-9e55-04e71db31cd0/l2LiPRsDx5.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            </div>
         </section>
         <div class="end-section"></div>
     
         <section id="education">
-            <dotlottie-player src="https://lottie.host/4cc44b9f-46d0-4bc4-b34c-5b869bb2e258/DifQvnSkmc.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
             <div class="ed-container">
                 <div class="row">
                     <h1 class="big-4">Education</h1>
@@ -98,16 +94,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="ed-box">
-                        <div class="ed-box-in">
-                            <span class="date">2017</span>
-                            <h2>12th Standard</h2>
-                            <span class="university">CBSE</span>
-                        </div>
-                    </div>
-                </div>
             </div>
+            <dotlottie-player src="https://lottie.host/4cc44b9f-46d0-4bc4-b34c-5b869bb2e258/DifQvnSkmc.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
         </section>
         <div class="end-section"></div>
     
@@ -116,64 +104,250 @@
                 <div class="skill-row">
                     <h1 class="big-4">Skills</h1>
                 </div>
-                <div class="skill-row2">My Technical Expertise</div>
-                
                 <br>
-                <div class="skill-container-box" data-aos="fade-up" data-aos-duration="100000">
+                <div class="skill-container-box" data-aos="fade-up" data-aos-duration="1000">
                     <div class="skill-box">
                         <div class="skill-name">
                             <img src="img/html.png" alt="html">
                             <p>HTML</p>
                         </div>
                         <div class="skill-name">
-                            <img src="img/CSS.png" alt="html">
+                            <img src="img/CSS.png" alt="css">
                             <p>CSS</p>
                         </div>
                         <div class="skill-name">
-                            <img src="img/js.png" alt="html">
-                            <p>Javascript</p>
+                            <img src="img/js.png" alt="js">
+                            <p>JavaScript</p>
                         </div>
                         <div class="skill-name">
-                            <img src="img/react.png" alt="html">
-                            <p>react.js</p>
+                            <img src="img/react.png" alt="react">
+                            <p>React.js</p>
+                        </div>
+                        <div class="skill-name">
+                            <img src="img/python.png" alt="python">
+                            <p>Python</p>
                         </div>
                     </div>
                     <div class="skill-box">
                         <div class="skill-name">
-                            <img src="img/python.png" alt="html">
-                            <p>Python</p>
-                        </div>
-                        <div class="skill-name">
-                            <img src="img/mysql.png" alt="html">
+                            <img src="img/mysql.png" alt="mysql">
                             <p>MySQL</p>
                         </div>
                         <div class="skill-name">
-                            <img src="img/mongodb.png" alt="html">
+                            <img src="img/mongodb.png" alt="mongodb">
                             <p>MongoDB</p>
                         </div>
                         <div class="skill-name">
-                            <img src="img/git.png" alt="html">
+                            <img src="img/git.png" alt="git">
                             <p>Git</p>
                         </div>
                         <div class="skill-name">
-                            <img src="img/github.png" alt="html">
-                            <p>Github</p>
+                            <img src="img/github.png" alt="github">
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="end-section"></div>  
+    
+        <section id="experience">
+            <div class="ex-container">
+                <div class="row">
+                    <h1 class="big-4">Experience</h1>
+                </div>
+                <div class="underline"></div>
+                <br>
+                <div class="row">
+                    <div class="ex-box">
+                        <div class="ex-box-in">
+                            <span class="date">February 2021 - August 2021</span>
+                            <h2>Digital Marketing Intern</h2>
+                            <span class="university">IIFEM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="animation-container"> 
+            <dotlottie-player src="https://lottie.host/e13c1c34-3f19-4f80-b91d-5a9065073d30/oAQLrd5Eek.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            </div>
+        </section>
+        <div class="end-section"></div>
+
+        <section id="projects">
+            <div class="project-container">
+                <div class="row">
+                    <h1 class="big-4">Projects</h1>
+                </div>
+                <br>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="img/Project1.png" alt="project" class="project-image">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="https://github.com/AnkitSheokeen/expensetracker" target="_blank" class="icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://expensetrackerappas.netlify.app/" target="_blank" class="icon-link">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <div class="line1">Expence Ease</div>
+                            <div class="line2">ReactJS  Bootstrap</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/Project2.png" alt="project" class="project-image">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#" class="icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="icon-link">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <div class="line1">Linkedin-Clone</div>
+                            <div class="line2">ReactJS  Bootstrap</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/Project3.png" alt="project" class="project-image">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="https://github.com/AnkitSheokeen/Portfolio" target="_blank" class="icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://ankitsheokeen.github.io/Portfolio/"  class="icon-link">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <div class="line1">Portfolio</div>
+                            <div class="line2">HTML  CSS  JS</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/Project5.png" alt="project" class="project-image">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#" class="icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="icon-link">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <div class="line1">FreshBite</div>
+                            <div class="line2">ReactJS  Bootstrap  MongoDB</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/Project4.png" alt="project" class="project-image">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="https://github.com/AnkitSheokeen/Currency-converter" target="_blank" class="icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://ankitsheokeen.github.io/Currency-converter/" target="_blank" class="icon-link">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <div class="line1">Currency converter</div>
+                            <div class="line2">ReactJS  Bootstrap</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/Project6.png" alt="project" class="project-image">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="#" class="icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="icon-link">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <div class="line1">NewsMonkey</div>
+                            <div class="line2">ReactJS  Bootstrap</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/Project7.png" alt="project" class="project-image">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="https://github.com/AnkitSheokeen/Game-RPS" target="_blank" class="icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://ankitsheokeen.github.io/Game-RPS/" target="_blank" class="icon-link">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <div class="line1">RPS- Game</div>
+                            <div class="line2">HTML  CSS  JS</div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/Project8.png" alt="project" class="project-image">
+                        <div class="overlay">
+                            <div class="icons">
+                                <a href="https://github.com/AnkitSheokeen/TextUtils" target="_blank" class="icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://ankitsheokeen.github.io/TextUtils/" target="_blank" class="icon-link">
+                                    <i class="fa-solid fa-square-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bottom-text">
+                            <div class="line1">TextUTil</div>
+                            <div class="line2">ReactJS  Bootstrap</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <div class="end-section"></div>
-    
-        <section id="projects">
-            <div>projects</div>
+
+        <section id="contact">
+            <div class="contact-container">
+                <h1>Send me a message!</h1>
+                <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
+                <br><br><br>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="email" >Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-control">Your Message</label>
+                        <textarea id="message" name="message" placeholder="Hi, I want to contact you regarding ---" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </section>
-        <div class="end-section"></div>
-    
-        <section id="experience">
-            <div>experience</div>
-        </section>
-        <div class="end-section"></div>
+
     </main>
     
     <footer>
@@ -183,12 +357,6 @@
         </div>
     </footer>
     
-    
-    <script>
-        AOS.init({
-            duration: 1000, // Duration of the animation in milliseconds
-        });
-    </script>
-    
+    <script src="style.js"></script>
 </body>
 </html>
